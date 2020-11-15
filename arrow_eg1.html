@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+    <body>
+        <h2> Using arrow in ecma 6. Arrow is used to write a function like addition 
+             without using keywords like function or curly brackets.
+          </h2>
+          <p id= "demo"></p>
+          <script>
+           
+              const x = (x,y) => x*y;
+              document.getElementById("demo").innerHTML = x(5,5)
+			  
+			  var sayName = function()
+			     {
+				  console.log("My name is Arya");
+			      };
+			  
+			 sayName();
+			  
+			  //ES6 arrow
+			  
+			  var sayAge = () => {
+				  console.log("My age is 5");
+			  };
+        
+			  sayAge();
+			  
+			  var sayLocation = (location,name) => console.log(`I am at ${location} and ${name}`);
+			  sayLocation("dubai","arya");
+        </script>
+        
+        
+        
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Activate Debugging</h2>
+
+<p>F12 on your keybord will activate debugging.</p>
+<p>Then select "Console" in the debugger menu.</p>
+<p>Then click Run again.</p>
+
+<script>
+const user = {
+	name: "Arya",
+	age: 5,
+    sayName: function(){
+	  console.log(`my name is ${this.name}`);
+	   const sayAge = () => {
+		console.log(`my age is ${this.age}`);
+	     };
+		sayAge();
+       }
+      };
+	
+
+user.sayName();
+	
+</script>
+
+</body>
+</html> 
+

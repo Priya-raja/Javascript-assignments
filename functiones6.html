@@ -1,0 +1,41 @@
+<!DOCTYPE>
+<html>
+    <body>
+        <p> This example demonstartes a function in es6</p>
+        <p id ='demo'></p>
+        <script>
+         function getBook(title,author)
+			{
+				return {
+					title,
+					author
+				};
+			}
+			var book = getBook('harry','jk');
+			console.log(book);
+			
+			var user = {
+				name: 'ED',
+				age: 12
+			};
+			
+			var myName = user.name;
+			console.log(myName);
+			//ES6 deconstructing objects
+			
+			const list= {
+				name : 'shoppinglist',
+				items : ['milk','cow']
+				
+			}
+			
+			const {name,items} = list;
+			console.log(name,items);
+			
+          
+			
+			
+        </script>
+    </body>
+    
+</html>
