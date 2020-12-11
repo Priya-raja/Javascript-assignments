@@ -33,4 +33,13 @@ function largestNumber(num) {
 }
 
 console.log(largestNumber(2))
+//Can be done like this also
+function largestNumber(num) {
+    const placeholder = '9'.repeat(num);
+    
+    return parseInt(placeholder);
+}
+
+
+
 
