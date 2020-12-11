@@ -21,3 +21,16 @@ function findDigit(str) {
     }
 }
 console.log(findDigit('a2bhf'));
+
+function largestNumber(num) {
+    let placeholder = '';
+    
+    for(let i = 0; i < num; i++) {
+        placeholder = placeholder.concat('9'); //add 9 in every iterartion
+    }
+    
+    return parseInt(placeholder);
+}
+
+console.log(largestNumber(2))
+
