@@ -1,17 +1,20 @@
-function digital_root(n)  {
-   let number = n.toString().length;
-   let result = []
-   let sum = 0;
-   
-   while (n> 0) {
-       const current = n % 10;
-       sum += current;
-       n = Math.floor(n / 10)
-       if( sum.toString().length > 1) {
-           n = sum;
-           digital_root(n);
-       }
-   }
-   return sum;
+const findSum = (num) => {
+    if(num < 10){
+       return num;
+    }
+    const lastDigit = num % 10;
+    const remainingNum = Math.floor(num / 10);
+    return findSum(lastDigit + findSum(remainingNum));
+ }
+ console.log(findSum(159));
+
+ //Another solution
+ function digital_root(n){
+    n = eval(n.toString().split('').join('+'));
+
+    if (n > 9) {
+        return digital_root(n);
+    }
+
+    return n;
 }
-console.log(digital_root(159));
