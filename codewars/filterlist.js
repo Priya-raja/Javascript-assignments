@@ -9,6 +9,8 @@ function filter_list(l) {
      
     }
     return result;
-    
+    // filter just the number from this
     }
 console.log((filter_list([1,2,'a','b'])))
+
+
