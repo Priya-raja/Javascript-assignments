@@ -35,7 +35,5 @@ function rgb(r, g, b){
     }
     return toHex(r) + toHex(g) + toHex(b);
   }
-
-
   ////////
   let rgb = (r, g, b) => [r,g,b].map( (item) => item>=255 ? 'FF' : item<=0 ? '00' : item.toString(16).toUpperCase()).join('')
