@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map, Filter and Reduce function</title>
+    <style>
+      body  { 
+
+            background-color: gold;
+        }
+        
+    </style>
+</head>
+<body>
+
+
+    <script>
+
+     let names = ['marge', 'homer','barter','maggie']
+     function capitalizeItUp(item) {
+         let firstLetter = item.charAt(0).toUpperCase(); //Capitalize only the 1st letter
+         let remainingLetter = item.slice(1);//start from 2nd letter
+         return firstLetter + remainingLetter;
+     }
+     let newNames = names.map(capitalizeItUp);
+     console.log(newNames)
+     
+    </script>
+</body>
+</html>
